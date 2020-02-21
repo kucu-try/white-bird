@@ -1,0 +1,39 @@
+Microsoft Windows [Version 10.0.17763.1039]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\baekf>git config --global user.name "kucu-try"
+
+C:\Users\baekf>git config --global user.email "baekfive@naver.com"
+
+C:\Users\baekf>
+
+[새로운 branch 만들기]
+
+ git clone
+ git branch<이름>
+
+[변경 사항 push 하기]
+ 
+ git status : 현재 git 상태 안내
+ git add : 변경 사항 추가
+ git commit -m "명령" : 명령어 git 에 기록
+ git push origin <branch 이름> : 로컬에서 공유브랜치로 push
+
+[편집하기 전에 작업]
+ 
+ git stash : 임시저장
+ git pull origin <branch 이름> : 로컬로 공유 파일 가져오기
+ 
+[다른 branch에 갈 때]
+ git checkout master 먼저 할 것(master는 모든 branch랑 연결)
+ git checkout <원하는 branch이름> : 원하는 branch로 이동
+
+[현재 위치한 branch를 기준으로 다른 branch merge 할 때]
+ git merge
+ git add
+ git commit -m ""
+ (실행 시 이상 있으면)
+ git status
+ git add . 
+ git commit -m ""
+ run
